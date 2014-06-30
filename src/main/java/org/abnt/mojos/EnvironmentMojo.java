@@ -20,14 +20,14 @@ public class EnvironmentMojo extends AbstractMojo {
     /**
      * Location of the build output.
      *
-     * @parameter expression="${project.build.outputDirectory}"
+     * @parameter property="project.build.outputDirectory"
      * @required
      */
     private File outputDirectory;
 
     /**
      * Environment to be used
-     * @parameter expression="${envm.env}"
+     * @parameter property="envm.env"
      */
     private String env;
 
@@ -40,7 +40,7 @@ public class EnvironmentMojo extends AbstractMojo {
 
     /**
      * Project base folder
-     * @parameter expression="${basedir}"
+     * @parameter property="basedir"
      */
     private File projectDirectory;
 
